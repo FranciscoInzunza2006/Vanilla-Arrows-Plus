@@ -22,13 +22,34 @@ public class ModItemGroups {
             .build();
 
     private static void registerEquipment (FabricItemGroupEntries item_group) {
+        item_group.add(ModItems.AERIAL_ARROW);
+        item_group.add(ModItems.AMETHYST_ARROW);
+        item_group.add(ModItems.BLAZING_ARROW);
+        item_group.add(ModItems.COPPER_ARROW);
+        item_group.add(ModItems.CHARGED_COPPER_ARROW);
+        item_group.add(ModItems.ECHO_ARROW);
+        item_group.add(ModItems.GOLD_ARROW);
+        item_group.add(ModItems.HONEY_ARROW);
+        item_group.add(ModItems.IRON_ARROW);
+        item_group.add(ModItems.PRISMARINE_ARROW);
+        item_group.add(ModItems.REDSTONE_ARROW);
+        item_group.add(ModItems.SLIME_ARROW);
+        item_group.add(ModItems.SPECTRAL_ARROW);
+    }
 
+    private static void registerIngredients (FabricItemGroupEntries item_group) {
+        item_group.add(ModItems.VIBRATING_DUST);
+        item_group.add(ModItems.WARDEN_ANTENNAE);
     }
 
     public static void registerItemGroups() {
         Registry.register(Registries.ITEM_GROUP, MOD_ITEM_GROUP_KEY, MOD_ITEM_GROUP);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItemGroups::registerEquipment);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItemGroups::registerIngredients);
+
         ItemGroupEvents.modifyEntriesEvent(MOD_ITEM_GROUP_KEY).register(ModItemGroups::registerEquipment);
+        ItemGroupEvents.modifyEntriesEvent(MOD_ITEM_GROUP_KEY).register(ModItemGroups::registerIngredients);
+
     }
 }
