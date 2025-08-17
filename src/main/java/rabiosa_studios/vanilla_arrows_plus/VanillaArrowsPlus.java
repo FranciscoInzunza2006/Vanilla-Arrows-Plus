@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import rabiosa_studios.vanilla_arrows_plus.effect.ModEffects;
 import rabiosa_studios.vanilla_arrows_plus.item.ModItemGroups;
 import rabiosa_studios.vanilla_arrows_plus.item.ModItems;
 
@@ -18,6 +19,7 @@ public class VanillaArrowsPlus implements ModInitializer {
 
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
+		ModEffects.registerEffects();
 
 		LOGGER.info('\"' + MOD_NAME + '\"' + " loaded!");
 	}
