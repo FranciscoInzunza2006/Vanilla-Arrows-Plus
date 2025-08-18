@@ -23,7 +23,6 @@ public class ModItems {
     public static final Item PRISMARINE_ARROW = register("prismarine_arrow");
     public static final Item REDSTONE_ARROW = register("redstone_arrow");
     public static final Item SLIME_ARROW = register("slime_arrow");
-    public static final Item SPECTRAL_ARROW = register("spectral_arrow");
 
     public static final Item VIBRATING_DUST = register("vibrating_dust");
     public static final Item WARDEN_ANTENNAE = register("warden_antennae");

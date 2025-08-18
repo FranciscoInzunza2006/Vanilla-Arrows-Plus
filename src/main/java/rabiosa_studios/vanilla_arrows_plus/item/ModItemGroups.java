@@ -34,7 +34,6 @@ public class ModItemGroups {
         item_group.add(ModItems.PRISMARINE_ARROW);
         item_group.add(ModItems.REDSTONE_ARROW);
         item_group.add(ModItems.SLIME_ARROW);
-        item_group.add(ModItems.SPECTRAL_ARROW);
     }
 
     private static void registerIngredients (FabricItemGroupEntries item_group) {

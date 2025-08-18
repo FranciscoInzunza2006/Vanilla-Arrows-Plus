@@ -31,7 +31,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PRISMARINE_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.REDSTONE_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIME_ARROW, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SPECTRAL_ARROW, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.VIBRATING_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.WARDEN_ANTENNAE, Models.GENERATED);
