@@ -14,7 +14,7 @@ import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 
 public class IronArrow extends CustomArrowItem {
     public IronArrow(Item.Settings settings, double damage, float speed, float divergence) {
-        super(settings, damage, speed, divergence);
+        super(settings, damage, speed, divergence, 1f);
     }
 
     @Override
