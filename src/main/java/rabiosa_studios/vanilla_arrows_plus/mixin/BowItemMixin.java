@@ -17,7 +17,6 @@ import rabiosa_studios.vanilla_arrows_plus.item.custom.CustomArrowItem;
 
 import java.util.List;
 
-@Debug(export = true)
 @Mixin(BowItem.class)
 public abstract class BowItemMixin {
     @WrapOperation(

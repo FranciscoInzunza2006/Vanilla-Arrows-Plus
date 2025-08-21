@@ -17,7 +17,7 @@ public abstract class HeldItemRendererMixin {
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/util/math/MatrixStack;translate(FFF)V", ordinal = 6))
     private void shakeBowBasedOnArrowDivergence (MatrixStack instance, float x, float y, float z, Operation<Void> original,
                                                  @Local(argsOnly = true) AbstractClientPlayerEntity player,
-                                                 @Local(argsOnly = true)ItemStack bow) {
+                                                 @Local(argsOnly = true) ItemStack bow) {
         float m = 1;
         if (player.getProjectileType(bow).getItem() instanceof CustomArrowItem arrow) {
             m = arrow.divergence;
