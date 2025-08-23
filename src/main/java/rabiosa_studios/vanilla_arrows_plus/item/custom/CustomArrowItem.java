@@ -7,7 +7,6 @@ import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
@@ -46,7 +45,7 @@ public class CustomArrowItem extends ArrowItem {
     public PersistentProjectileEntity createArrow(World world, ItemStack stack, LivingEntity shooter, @Nullable ItemStack shotFrom) {
         ArrowEntity arrowEntity = new ArrowEntity(world, shooter, stack.copyWithCount(1), shotFrom);
 
-        arrowEntity.setDamage(damage);
+       // arrowEntity.setDamage(damage);
 
         return arrowEntity;
     }
@@ -56,7 +55,7 @@ public class CustomArrowItem extends ArrowItem {
         ArrowEntity arrowEntity = new ArrowEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1), null);
         arrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
 
-        arrowEntity.setDamage(damage);
+        //arrowEntity.setDamage(damage);
 
         return arrowEntity;
     }

@@ -20,7 +20,7 @@ public class ModItems {
     public static final Item ECHO_ARROW = register("echo_arrow");
 
     public static final Item GOLD_ARROW = register("gold_arrow", settings -> new CustomArrowItem(
-            settings, 4, 5, 0.1f, 1f));
+            settings, 4, 5, 0.1f, 0.5f));
 
     public static final Item HONEY_ARROW = register("honey_arrow");
 
