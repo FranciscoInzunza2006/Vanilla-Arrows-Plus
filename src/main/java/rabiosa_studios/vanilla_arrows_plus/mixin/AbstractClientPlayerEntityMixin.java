@@ -9,9 +9,9 @@ import rabiosa_studios.vanilla_arrows_plus.item.custom.CustomArrowItem;
 
 @Mixin(AbstractClientPlayerEntity.class)
 public abstract class AbstractClientPlayerEntityMixin {
-    @ModifyArg(method = "getFovMultiplier", at= @At(value = "INVOKE", target = "Ljava/lang/Math;min(FF)F"), index = 0)
-    private float applyArrowChargeTimeFovVisual (float used_time) {
-        AbstractClientPlayerEntity thisObject = (AbstractClientPlayerEntity) (Object)this;
+    @ModifyArg(method = "getFovMultiplier", at = @At(value = "INVOKE", target = "Ljava/lang/Math;min(FF)F"), index = 0)
+    private float applyArrowChargeTimeFovVisual(float used_time) {
+        AbstractClientPlayerEntity thisObject = (AbstractClientPlayerEntity) (Object) this;
         if (thisObject.getProjectileType(Items.BOW.getDefaultStack()).getItem() instanceof CustomArrowItem arrow) {
             return used_time / arrow.charge_time;
         }

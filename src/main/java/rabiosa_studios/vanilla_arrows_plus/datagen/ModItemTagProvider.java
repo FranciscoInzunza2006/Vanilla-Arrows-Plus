@@ -2,7 +2,6 @@ package rabiosa_studios.vanilla_arrows_plus.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.item.ArrowItem;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import rabiosa_studios.vanilla_arrows_plus.item.ModItems;

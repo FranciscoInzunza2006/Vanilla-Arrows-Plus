@@ -11,7 +11,7 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> HONEYED = register("honeyed", new HoneyedEffect());
     public static final RegistryEntry<StatusEffect> REDSTONED = register("redstoned", new RedstonedEffect());
 
-    private static RegistryEntry<StatusEffect> register (String name, StatusEffect status_effect) {
+    private static RegistryEntry<StatusEffect> register(String name, StatusEffect status_effect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(VanillaArrowsPlus.MOD_ID, name), status_effect);
     }
 

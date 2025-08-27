@@ -16,7 +16,7 @@ import java.util.List;
 public abstract class BowItemMixin {
     @ModifyArgs(method = "onStoppedUsing",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/item/BowItem;shootAll(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/LivingEntity;Lnet/minecraft/util/Hand;Lnet/minecraft/item/ItemStack;Ljava/util/List;FFZLnet/minecraft/entity/LivingEntity;)V"))
-    private void applyArrowSpeedAndDivergence (Args args) {
+    private void applyArrowSpeedAndDivergence(Args args) {
         final int PROJECTILES_INDEX = 4;
         final int BOW_CHARGE_INDEX = 5;
         final int DIVERGENCE_INDEX = 6;
@@ -33,7 +33,7 @@ public abstract class BowItemMixin {
         args.set(DIVERGENCE_INDEX, divergence * arrow.divergence);
     }
 
-    @ModifyArg(method = "onStoppedUsing", at= @At(value = "INVOKE", target = "Lnet/minecraft/item/BowItem;getPullProgress(I)F"))
+    @ModifyArg(method = "onStoppedUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/BowItem;getPullProgress(I)F"))
     private int applyArrowChargeTime(int use_ticks, @Local(ordinal = 1) ItemStack arrow_stack) {
         if (arrow_stack.getItem() instanceof CustomArrowItem custom_arrow)
             return (int) (use_ticks / custom_arrow.charge_time);

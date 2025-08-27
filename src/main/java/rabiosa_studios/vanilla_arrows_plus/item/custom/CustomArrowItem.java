@@ -16,12 +16,11 @@ public class CustomArrowItem extends ArrowItem {
     public final float charge_time;
 
     /**
-     *
-     * @param max_damage Vanilla arrow max damage (full speed no enchantments) is {@value VANILLA_MAX_DAMAGE}, read note below.
-     * @param speed Vanilla speed is {@value VANILLA_SPEED}
-     * @param divergence Vanilla divergence is {@value VANILLA_DIVERGENCE}
+     * @param max_damage  Vanilla arrow max damage (full speed no enchantments) is {@value VANILLA_MAX_DAMAGE}, read note below.
+     * @param speed       Vanilla speed is {@value VANILLA_SPEED}
+     * @param divergence  Vanilla divergence is {@value VANILLA_DIVERGENCE}
      * @param charge_time Vanilla charge time is {@value VANILLA_CHARGE_TIME}, this value is in seconds.
-     * <p>Note: Since the formula for the damage of the arrow is damage * speed, increasing the speed a lot and lowering the damage only a bit will end up with a arrow that does way more damage than planned. This function fixes it automatically.</p>
+     *                    <p>Note: Since the formula for the damage of the arrow is damage * speed, increasing the speed a lot and lowering the damage only a bit will end up with a arrow that does way more damage than planned. This function fixes it automatically.</p>
      */
     public CustomArrowItem(Item.Settings settings, double max_damage, float speed, float divergence, float charge_time) {
         super(settings);

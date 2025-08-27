@@ -4,7 +4,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import rabiosa_studios.vanilla_arrows_plus.entity.ModEntities;

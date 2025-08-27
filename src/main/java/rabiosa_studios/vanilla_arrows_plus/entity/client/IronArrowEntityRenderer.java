@@ -8,7 +8,7 @@ import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 
 public class IronArrowEntityRenderer extends ProjectileEntityRenderer<IronArrowEntity, ProjectileEntityRenderState> {
-    public static final Identifier TEXTURE = Identifier.of(VanillaArrowsPlus.MOD_ID,"textures/entity/projectiles/iron_arrow.png");
+    public static final Identifier TEXTURE = Identifier.of(VanillaArrowsPlus.MOD_ID, "textures/entity/projectiles/iron_arrow.png");
 
     public IronArrowEntityRenderer(EntityRendererFactory.Context context) {
         super(context);

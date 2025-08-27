@@ -21,7 +21,7 @@ public class ModItemGroups {
             .displayName(Text.translatable("itemGroup.vanilla_arrows_plus"))
             .build();
 
-    private static void registerEquipment (FabricItemGroupEntries item_group) {
+    private static void registerEquipment(FabricItemGroupEntries item_group) {
         item_group.add(ModItems.AERIAL_ARROW);
         item_group.add(ModItems.AMETHYST_ARROW);
         item_group.add(ModItems.BLAZING_ARROW);
@@ -36,7 +36,7 @@ public class ModItemGroups {
         item_group.add(ModItems.SLIME_ARROW);
     }
 
-    private static void registerIngredients (FabricItemGroupEntries item_group) {
+    private static void registerIngredients(FabricItemGroupEntries item_group) {
         item_group.add(ModItems.VIBRATING_DUST);
         item_group.add(ModItems.WARDEN_ANTENNAE);
     }

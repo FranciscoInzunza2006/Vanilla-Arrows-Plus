@@ -7,7 +7,6 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
-import rabiosa_studios.vanilla_arrows_plus.item.custom.CustomArrowItem;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.GoldArrow;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.IronArrow;
 
@@ -29,7 +28,7 @@ public class ModItems {
     public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(
             settings, 10, 2.75f, 3f, 1.5f));
 
-//    public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(settings, 10.0, 2.5f, 5));
+    //    public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(settings, 10.0, 2.5f, 5));
     public static final Item PRISMARINE_ARROW = register("prismarine_arrow");
     public static final Item REDSTONE_ARROW = register("redstone_arrow");
     public static final Item SLIME_ARROW = register("slime_arrow");

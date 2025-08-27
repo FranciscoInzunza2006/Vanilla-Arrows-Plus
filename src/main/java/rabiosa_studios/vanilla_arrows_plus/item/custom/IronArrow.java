@@ -1,7 +1,6 @@
 package rabiosa_studios.vanilla_arrows_plus.item.custom;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.Item;
@@ -14,7 +13,6 @@ import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 
 public class IronArrow extends CustomArrowItem {
     /**
-     * @param settings
      * @param max_damage  Vanilla arrow max damage (full speed no enchantments) is {@value VANILLA_MAX_DAMAGE}, read note below.
      * @param speed       Vanilla speed is {@value VANILLA_SPEED}
      * @param divergence  Vanilla divergence is {@value VANILLA_DIVERGENCE}
