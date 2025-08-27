@@ -8,6 +8,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.CustomArrowItem;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.GoldArrow;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.IronArrow;
 
 import java.util.function.Function;
 
@@ -19,12 +21,12 @@ public class ModItems {
     public static final Item COPPER_ARROW = register("copper_arrow");
     public static final Item ECHO_ARROW = register("echo_arrow");
 
-    public static final Item GOLD_ARROW = register("gold_arrow", settings -> new CustomArrowItem(
+    public static final Item GOLD_ARROW = register("gold_arrow", settings -> new GoldArrow(
             settings, 4, 5, 0.1f, 0.5f));
 
     public static final Item HONEY_ARROW = register("honey_arrow");
 
-    public static final Item IRON_ARROW = register("iron_arrow", settings -> new CustomArrowItem(
+    public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(
             settings, 10, 2.75f, 3f, 1.5f));
 
 //    public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(settings, 10.0, 2.5f, 5));

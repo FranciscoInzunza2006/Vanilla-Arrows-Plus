@@ -1,16 +1,7 @@
 package rabiosa_studios.vanilla_arrows_plus.item.custom;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.projectile.ArrowEntity;
-import net.minecraft.entity.projectile.PersistentProjectileEntity;
-import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.Position;
-import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 public class CustomArrowItem extends ArrowItem {
     public static final double VANILLA_DAMAGE = 2.0d;
@@ -39,24 +30,5 @@ public class CustomArrowItem extends ArrowItem {
         this.speed = speed;
         this.divergence = divergence;
         this.charge_time = charge_time;
-    }
-
-    @Override
-    public PersistentProjectileEntity createArrow(World world, ItemStack stack, LivingEntity shooter, @Nullable ItemStack shotFrom) {
-        ArrowEntity arrowEntity = new ArrowEntity(world, shooter, stack.copyWithCount(1), shotFrom);
-
-       // arrowEntity.setDamage(damage);
-
-        return arrowEntity;
-    }
-
-    @Override
-    public ProjectileEntity createEntity(World world, Position pos, ItemStack stack, Direction direction) {
-        ArrowEntity arrowEntity = new ArrowEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1), null);
-        arrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
-
-        //arrowEntity.setDamage(damage);
-
-        return arrowEntity;
     }
 }
