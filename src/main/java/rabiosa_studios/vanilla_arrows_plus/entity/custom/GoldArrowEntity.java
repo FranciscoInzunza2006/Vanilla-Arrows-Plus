@@ -9,7 +9,7 @@ import org.jetbrains.annotations.Nullable;
 import rabiosa_studios.vanilla_arrows_plus.entity.ModEntities;
 import rabiosa_studios.vanilla_arrows_plus.item.ModItems;
 
-public class GoldArrowEntity extends CustomArrowEntity {
+public class GoldArrowEntity extends PersistentProjectileEntity {
     public GoldArrowEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
