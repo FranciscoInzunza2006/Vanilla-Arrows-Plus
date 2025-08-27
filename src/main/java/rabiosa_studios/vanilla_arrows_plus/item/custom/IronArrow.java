@@ -17,7 +17,7 @@ public class IronArrow extends CustomArrowItem {
      * @param speed       Vanilla speed is {@value VANILLA_SPEED}
      * @param divergence  Vanilla divergence is {@value VANILLA_DIVERGENCE}
      * @param charge_time Vanilla charge time is {@value VANILLA_CHARGE_TIME}, this value is in seconds.
-     *                    <p>Note: Since the formula for the damage of the arrow is damage * speed, increasing the speed a lot and lowering the damage only a bit will end up with a arrow that does way more damage than planned. This function fixes it automatically.</p>
+     *                    <p>Note: Since the formula for the damage to the arrow is damage * speed, increasing the speed a lot and lowering the damage only a bit will end up with an arrow that does way more damage than planned. This function fixes it automatically.</p>
      */
     public IronArrow(Item.Settings settings, double max_damage, float speed, float divergence, float charge_time) {
         super(settings, max_damage, speed, divergence, charge_time);
