@@ -10,6 +10,10 @@ public class CustomArrowItem extends ArrowItem {
     public static final float VANILLA_DIVERGENCE = 1.0f;
     public static final float VANILLA_CHARGE_TIME = 1.0f;
 
+    public static final float VANILLA_CROSSBOW_SPEED = 3.15f;
+    public static final float VANILLA_CROSSBOW_SPEED_MULTIPLIER = VANILLA_CROSSBOW_SPEED/VANILLA_SPEED;
+    public static final float VANILLA_CROSSBOW_PULL_TIME = 1.25F;
+
     public final double damage;
     public final float speed;
     public final float divergence;
