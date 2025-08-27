@@ -13,7 +13,6 @@ import rabiosa_studios.vanilla_arrows_plus.entity.custom.GoldArrowEntity;
 
 public class GoldArrow extends CustomArrowItem {
     /**
-     * @param settings
      * @param max_damage  Vanilla arrow max damage (full speed no enchantments) is {@value VANILLA_MAX_DAMAGE}, read note below.
      * @param speed       Vanilla speed is {@value VANILLA_SPEED}
      * @param divergence  Vanilla divergence is {@value VANILLA_DIVERGENCE}

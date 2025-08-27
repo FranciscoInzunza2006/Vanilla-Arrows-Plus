@@ -26,7 +26,7 @@ public class ModItems {
     public static final Item HONEY_ARROW = register("honey_arrow");
 
     public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(
-            settings, 10, 2.75f, 3f, 1.5f));
+            settings, 30, 1.5f, 10f, 2f));
 
     //    public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(settings, 10.0, 2.5f, 5));
     public static final Item PRISMARINE_ARROW = register("prismarine_arrow");
