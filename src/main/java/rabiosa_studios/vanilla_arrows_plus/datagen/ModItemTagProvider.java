@@ -17,6 +17,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         valueLookupBuilder(ItemTags.ARROWS)
                 .add(ModItems.IRON_ARROW)
-                .add(ModItems.GOLD_ARROW);
+                .add(ModItems.GOLD_ARROW)
+                .add(ModItems.PRISMARINE_ARROW);
     }
 }

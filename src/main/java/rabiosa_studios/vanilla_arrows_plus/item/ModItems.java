@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.GoldArrow;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.IronArrow;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.PrismarineArrow;
 
 import java.util.function.Function;
 
@@ -29,7 +30,11 @@ public class ModItems {
             settings, 30, 1.5f, 10f, 2f));
 
     //    public static final Item IRON_ARROW = register("iron_arrow", settings -> new IronArrow(settings, 10.0, 2.5f, 5));
-    public static final Item PRISMARINE_ARROW = register("prismarine_arrow");
+
+    public static final Item PRISMARINE_ARROW = register("prismarine_arrow", settings -> new PrismarineArrow(
+            settings, 10, 3, 1, 1
+    ));
+
     public static final Item REDSTONE_ARROW = register("redstone_arrow");
     public static final Item SLIME_ARROW = register("slime_arrow");
 
