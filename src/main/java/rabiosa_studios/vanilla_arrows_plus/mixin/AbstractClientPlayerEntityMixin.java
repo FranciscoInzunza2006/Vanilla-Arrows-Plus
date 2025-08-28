@@ -13,7 +13,7 @@ public abstract class AbstractClientPlayerEntityMixin {
     private float applyArrowChargeTimeFovVisual(float used_time) {
         AbstractClientPlayerEntity thisObject = (AbstractClientPlayerEntity) (Object) this;
         if (thisObject.getProjectileType(Items.BOW.getDefaultStack()).getItem() instanceof CustomArrowItem arrow) {
-            return used_time / arrow.charge_time;
+            return used_time / arrow.getChargeTime();
         }
 
         return used_time;

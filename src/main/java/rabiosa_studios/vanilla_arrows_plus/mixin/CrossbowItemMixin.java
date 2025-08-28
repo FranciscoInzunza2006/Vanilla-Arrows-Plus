@@ -18,13 +18,13 @@ public abstract class CrossbowItemMixin {
     @ModifyConstant(method = "getPullTime", constant = @Constant(floatValue = CustomArrowItem.VANILLA_CROSSBOW_PULL_TIME))
     private static float applyChargeTime(float pull_time, @Local(argsOnly = true) ItemStack crossbow, @Local(argsOnly = true) LivingEntity user) {
         return pull_time *
-                (user.getProjectileType(crossbow).getItem() instanceof CustomArrowItem arrow ? arrow.charge_time : 1.0f);
+                (user.getProjectileType(crossbow).getItem() instanceof CustomArrowItem arrow ? arrow.getChargeTime() : 1.0f);
     }
 
     @Inject(method = "getSpeed", at = @At("RETURN"), cancellable = true)
     private static void applyArrowSpeed(ChargedProjectilesComponent stack, CallbackInfoReturnable<Float> cir) {
         if (stack.getProjectiles().getFirst().getItem() instanceof CustomArrowItem arrow) {
-            cir.setReturnValue(CustomArrowItem.VANILLA_CROSSBOW_SPEED_MULTIPLIER * arrow.speed);
+            cir.setReturnValue(CustomArrowItem.VANILLA_CROSSBOW_SPEED_MULTIPLIER * arrow.getSpeed());
         }
     }
 }

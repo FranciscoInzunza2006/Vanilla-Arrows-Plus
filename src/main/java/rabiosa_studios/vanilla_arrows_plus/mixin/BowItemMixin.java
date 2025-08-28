@@ -29,14 +29,14 @@ public abstract class BowItemMixin {
         float bow_charge = (float) args.get(BOW_CHARGE_INDEX) / CustomArrowItem.VANILLA_SPEED;
         float divergence = args.get(DIVERGENCE_INDEX);
 
-        args.set(BOW_CHARGE_INDEX, bow_charge * arrow.speed);
-        args.set(DIVERGENCE_INDEX, divergence * arrow.divergence);
+        args.set(BOW_CHARGE_INDEX, bow_charge * arrow.getSpeed());
+        args.set(DIVERGENCE_INDEX, divergence * arrow.getDivergence());
     }
 
     @ModifyArg(method = "onStoppedUsing", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/BowItem;getPullProgress(I)F"))
     private int applyArrowChargeTime(int use_ticks, @Local(ordinal = 1) ItemStack arrow_stack) {
         if (arrow_stack.getItem() instanceof CustomArrowItem custom_arrow)
-            return (int) (use_ticks / custom_arrow.charge_time);
+            return (int) (use_ticks / custom_arrow.getChargeTime());
 
         return use_ticks;
     }

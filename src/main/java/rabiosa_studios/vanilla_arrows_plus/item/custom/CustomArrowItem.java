@@ -14,10 +14,10 @@ public class CustomArrowItem extends ArrowItem {
     public static final float VANILLA_CROSSBOW_SPEED_MULTIPLIER = VANILLA_CROSSBOW_SPEED/VANILLA_SPEED;
     public static final float VANILLA_CROSSBOW_PULL_TIME = 1.25F;
 
-    public final double damage;
-    public final float speed;
-    public final float divergence;
-    public final float charge_time;
+    private final double damage;
+    private final float speed;
+    private final float divergence;
+    private final float charge_time;
 
     /**
      * @param max_damage  Vanilla arrow max damage (full speed no enchantments) is {@value VANILLA_MAX_DAMAGE}, read note below.
@@ -35,5 +35,21 @@ public class CustomArrowItem extends ArrowItem {
         this.speed = speed;
         this.divergence = divergence;
         this.charge_time = charge_time;
+    }
+
+    public double getDamage() {
+        return damage;
+    }
+
+    public float getSpeed() {
+        return speed;
+    }
+
+    public float getDivergence() {
+        return divergence;
+    }
+
+    public float getChargeTime() {
+        return charge_time;
     }
 }

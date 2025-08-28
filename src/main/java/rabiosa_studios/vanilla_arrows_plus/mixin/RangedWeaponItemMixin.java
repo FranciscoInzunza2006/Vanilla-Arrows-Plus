@@ -18,7 +18,7 @@ public abstract class RangedWeaponItemMixin {
                                   @Local ArrowItem arrow,
                                   @Local PersistentProjectileEntity arrow_entity) {
         if (arrow instanceof CustomArrowItem custom_arrow) {
-            arrow_entity.setDamage(custom_arrow.damage);
+            arrow_entity.setDamage(custom_arrow.getDamage());
         }
     }
 }
