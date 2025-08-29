@@ -1,5 +1,6 @@
 package rabiosa_studios.vanilla_arrows_plus.item.custom;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.item.ArrowItem;
 import net.minecraft.item.Item;
 
@@ -11,7 +12,7 @@ public class CustomArrowItem extends ArrowItem {
     public static final float VANILLA_CHARGE_TIME = 1.0f;
 
     public static final float VANILLA_CROSSBOW_SPEED = 3.15f;
-    public static final float VANILLA_CROSSBOW_SPEED_MULTIPLIER = VANILLA_CROSSBOW_SPEED/VANILLA_SPEED;
+    public static final float VANILLA_CROSSBOW_SPEED_MULTIPLIER = VANILLA_CROSSBOW_SPEED / VANILLA_SPEED;
     public static final float VANILLA_CROSSBOW_PULL_TIME = 1.25F;
 
     private final double damage;
@@ -41,7 +42,7 @@ public class CustomArrowItem extends ArrowItem {
         return damage;
     }
 
-    public float getSpeed() {
+    public float getSpeed(Entity user) {
         return speed;
     }
 
@@ -49,7 +50,7 @@ public class CustomArrowItem extends ArrowItem {
         return divergence;
     }
 
-    public float getChargeTime() {
+    public float getChargeTime(Entity user) {
         return charge_time;
     }
 }

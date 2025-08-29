@@ -26,6 +26,11 @@ public class PrismarineArrowEntity extends PersistentProjectileEntity {
     protected ItemStack getDefaultItemStack() {
         return new ItemStack(ModItems.PRISMARINE_ARROW);
     }
+
+    @Override
+    protected float getDragInWater() {
+        return 1.05f;
+    }
 }
 
 

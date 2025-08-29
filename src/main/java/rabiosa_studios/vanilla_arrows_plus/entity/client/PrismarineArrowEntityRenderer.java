@@ -5,7 +5,6 @@ import net.minecraft.client.render.entity.ProjectileEntityRenderer;
 import net.minecraft.client.render.entity.state.ProjectileEntityRenderState;
 import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
-import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.PrismarineArrowEntity;
 
 public class PrismarineArrowEntityRenderer extends ProjectileEntityRenderer<PrismarineArrowEntity, ProjectileEntityRenderState> {

@@ -11,9 +11,10 @@ import rabiosa_studios.vanilla_arrows_plus.item.custom.CustomArrowItem;
 public abstract class AbstractClientPlayerEntityMixin {
     @ModifyArg(method = "getFovMultiplier", at = @At(value = "INVOKE", target = "Ljava/lang/Math;min(FF)F"), index = 0)
     private float applyArrowChargeTimeFovVisual(float used_time) {
-        AbstractClientPlayerEntity thisObject = (AbstractClientPlayerEntity) (Object) this;
-        if (thisObject.getProjectileType(Items.BOW.getDefaultStack()).getItem() instanceof CustomArrowItem arrow) {
-            return used_time / arrow.getChargeTime();
+        AbstractClientPlayerEntity user = (AbstractClientPlayerEntity) (Object) this;
+
+        if (user.getProjectileType(Items.BOW.getDefaultStack()).getItem() instanceof CustomArrowItem arrow) {
+            return used_time / arrow.getChargeTime(user);
         }
 
         return used_time;

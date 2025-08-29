@@ -23,6 +23,6 @@ public abstract class HeldItemRendererMixin {
 
     @ModifyConstant(method = "renderFirstPersonItem", constant = @Constant(floatValue = 20.0F))
     private float scaleBowBasedOnChargeTime(float tick_rate_idk, @Local(argsOnly = true) @NotNull AbstractClientPlayerEntity player) {
-        return 20.0f * (player.getProjectileType(Items.BOW.getDefaultStack()).getItem() instanceof CustomArrowItem arrow ? arrow.getChargeTime() : 1.0f);
+        return 20.0f * (player.getProjectileType(Items.BOW.getDefaultStack()).getItem() instanceof CustomArrowItem arrow ? arrow.getChargeTime(player) : 1.0f);
     }
 }
