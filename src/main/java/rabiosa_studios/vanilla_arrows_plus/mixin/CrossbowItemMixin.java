@@ -22,6 +22,7 @@ public abstract class CrossbowItemMixin {
                 (user.getProjectileType(crossbow).getItem() instanceof CustomArrowItem arrow ? arrow.getChargeTime(user) : 1.0f);
     }
 
+    // TODO: This doesnt affect entities, check CrossbowUser interface
     @WrapOperation(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/CrossbowItem;getSpeed(Lnet/minecraft/component/type/ChargedProjectilesComponent;)F"))
     private static float applyArrowSpeed(ChargedProjectilesComponent stack, Operation<Float> original, @Local(argsOnly = true)PlayerEntity user) {
         if (stack.getProjectiles().getFirst().getItem() instanceof CustomArrowItem arrow) {
