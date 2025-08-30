@@ -18,6 +18,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         valueLookupBuilder(ItemTags.ARROWS)
                 .add(ModItems.IRON_ARROW)
                 .add(ModItems.GOLD_ARROW)
-                .add(ModItems.PRISMARINE_ARROW);
+                .add(ModItems.PRISMARINE_ARROW)
+                .add(ModItems.CLUSTER_ARROW);
     }
 }

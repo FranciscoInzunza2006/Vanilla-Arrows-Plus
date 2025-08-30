@@ -23,7 +23,7 @@ public class ModItemGroups {
 
     private static void registerEquipment(FabricItemGroupEntries item_group) {
         item_group.add(ModItems.AERIAL_ARROW);
-        item_group.add(ModItems.AMETHYST_ARROW);
+        item_group.add(ModItems.CLUSTER_ARROW);
         item_group.add(ModItems.BLAZING_ARROW);
         item_group.add(ModItems.COPPER_ARROW);
         item_group.add(ModItems.CHARGED_COPPER_ARROW);

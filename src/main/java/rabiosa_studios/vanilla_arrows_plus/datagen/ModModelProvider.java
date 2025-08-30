@@ -20,7 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.AERIAL_ARROW, Models.GENERATED);
-        itemModelGenerator.register(ModItems.AMETHYST_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLUSTER_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLAZING_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHARGED_COPPER_ARROW, Models.GENERATED);

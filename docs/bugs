@@ -1,7 +1,7 @@
 
 1. If the charge time of a arrow is very high you or the speed of the arrow itself is very slow you can shoot a almost stationary arrow
 2. "Power" enchantment gives a raw base damage boost, making gold arrows stupid op.
-
+3. Arrow Models are bugged and some parts are missing
 
 Modify entity creation
 Modify bow and crossbow shoot function

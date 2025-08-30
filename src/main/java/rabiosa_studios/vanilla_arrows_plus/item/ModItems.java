@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.ClusterArrow;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.GoldArrow;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.IronArrow;
 import rabiosa_studios.vanilla_arrows_plus.item.custom.PrismarineArrow;
@@ -15,7 +16,8 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item AERIAL_ARROW = register("aerial_arrow");
-    public static final Item AMETHYST_ARROW = register("amethyst_arrow");
+    public static final Item CLUSTER_ARROW = register("cluster_arrow", settings -> new ClusterArrow(
+            settings, 2, 2, 1, 1));
     public static final Item BLAZING_ARROW = register("blazing_arrow");
     public static final Item CHARGED_COPPER_ARROW = register("charged_copper_arrow");
     public static final Item COPPER_ARROW = register("copper_arrow");

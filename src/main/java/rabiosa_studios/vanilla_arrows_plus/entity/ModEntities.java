@@ -9,6 +9,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
+import rabiosa_studios.vanilla_arrows_plus.entity.custom.ClusterArrowEntity;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.GoldArrowEntity;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.PrismarineArrowEntity;
@@ -36,6 +37,16 @@ public class ModEntities {
     public static final EntityType<PrismarineArrowEntity> PRISMARINE_ARROW = register(
             "prismarine_arrow",
             EntityType.Builder.<PrismarineArrowEntity>create(PrismarineArrowEntity::new, SpawnGroup.MISC)
+                    .dropsNothing()
+                    .dimensions(0.5F, 0.5F)
+                    .eyeHeight(0.13F)
+                    .maxTrackingRange(4)
+                    .trackingTickInterval(20)
+    );
+
+    public static final EntityType<ClusterArrowEntity> CLUSTER_ARROW = register(
+            "cluster_arrow",
+            EntityType.Builder.<ClusterArrowEntity>create(ClusterArrowEntity::new, SpawnGroup.MISC)
                     .dropsNothing()
                     .dimensions(0.5F, 0.5F)
                     .eyeHeight(0.13F)
