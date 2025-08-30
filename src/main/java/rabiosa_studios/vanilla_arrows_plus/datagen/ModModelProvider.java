@@ -25,7 +25,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COPPER_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHARGED_COPPER_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.ECHO_ARROW, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GOLD_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.HONEY_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRISMARINE_ARROW, Models.GENERATED);

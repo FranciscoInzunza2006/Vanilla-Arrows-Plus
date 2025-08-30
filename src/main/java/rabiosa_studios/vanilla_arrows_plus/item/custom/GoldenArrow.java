@@ -9,22 +9,27 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import rabiosa_studios.vanilla_arrows_plus.entity.custom.GoldArrowEntity;
+import rabiosa_studios.vanilla_arrows_plus.entity.custom.GoldenArrowEntity;
 
-public class GoldArrow extends CustomArrowItem {
-    public GoldArrow(Item.Settings settings, double max_damage, float speed, float divergence, float charge_time) {
-        super(settings, max_damage, speed, divergence, charge_time);
+public class GoldenArrow extends CustomArrowItem {
+    public GoldenArrow(Item.Settings settings) {
+        super(settings,
+                VANILLA_MAX_DAMAGE * 0.6,
+                VANILLA_SPEED * 3f,
+                VANILLA_DIVERGENCE * 0.1f,
+                VANILLA_PULL_TIME * 0.5f);
     }
 
     @Override
     public PersistentProjectileEntity createArrow(World world, ItemStack stack, LivingEntity shooter, @Nullable ItemStack shotFrom) {
-        return new GoldArrowEntity(world, shooter, stack.copyWithCount(1), shotFrom);
+        return new GoldenArrowEntity(world, shooter, stack.copyWithCount(1), shotFrom);
     }
 
     @Override
     public ProjectileEntity createEntity(World world, Position pos, ItemStack stack, Direction direction) {
-        GoldArrowEntity GoldArrowEntity = new GoldArrowEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1), null);
-        GoldArrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
-        return GoldArrowEntity;
+        GoldenArrowEntity entity = new GoldenArrowEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1), null);
+        entity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
+
+        return entity;
     }
 }

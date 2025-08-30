@@ -10,11 +10,14 @@ import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.ClusterArrowEntity;
-import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 
 public class ClusterArrow extends CustomArrowItem {
-    public ClusterArrow(Item.Settings settings, double max_damage, float speed, float divergence, float charge_time) {
-        super(settings, max_damage, speed, divergence, charge_time);
+    public ClusterArrow(Item.Settings settings) {
+        super(settings,
+                VANILLA_MAX_DAMAGE,
+                VANILLA_SPEED,
+                VANILLA_DIVERGENCE,
+                VANILLA_PULL_TIME);
     }
 
     @Override

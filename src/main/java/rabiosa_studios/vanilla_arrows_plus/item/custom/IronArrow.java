@@ -12,8 +12,12 @@ import org.jetbrains.annotations.Nullable;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 
 public class IronArrow extends CustomArrowItem {
-    public IronArrow(Item.Settings settings, double max_damage, float speed, float divergence, float charge_time) {
-        super(settings, max_damage, speed, divergence, charge_time);
+    public IronArrow(Item.Settings settings) {
+        super(settings,
+                VANILLA_MAX_DAMAGE * 2,
+                VANILLA_SPEED * 0.75f,
+                VANILLA_DIVERGENCE * 5,
+                VANILLA_PULL_TIME * 1.5f);
     }
 
     @Override
@@ -23,9 +27,9 @@ public class IronArrow extends CustomArrowItem {
 
     @Override
     public ProjectileEntity createEntity(World world, Position pos, ItemStack stack, Direction direction) {
-        IronArrowEntity ironArrowEntity = new IronArrowEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1), null);
-        ironArrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
+        IronArrowEntity entity = new IronArrowEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1), null);
+        entity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
 
-        return ironArrowEntity;
+        return entity;
     }
 }

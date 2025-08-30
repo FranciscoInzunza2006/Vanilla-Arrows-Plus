@@ -10,14 +10,14 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.ClusterArrowEntity;
-import rabiosa_studios.vanilla_arrows_plus.entity.custom.GoldArrowEntity;
+import rabiosa_studios.vanilla_arrows_plus.entity.custom.GoldenArrowEntity;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.IronArrowEntity;
 import rabiosa_studios.vanilla_arrows_plus.entity.custom.PrismarineArrowEntity;
 
 public class ModEntities {
-    public static final EntityType<GoldArrowEntity> GOLD_ARROW = register(
+    public static final EntityType<GoldenArrowEntity> GOLDEN_ARROW = register(
             "gold_arrow",
-            EntityType.Builder.<GoldArrowEntity>create(GoldArrowEntity::new, SpawnGroup.MISC)
+            EntityType.Builder.<GoldenArrowEntity>create(GoldenArrowEntity::new, SpawnGroup.MISC)
                     .dropsNothing()
                     .dimensions(0.5F, 0.5F)
                     .eyeHeight(0.13F)

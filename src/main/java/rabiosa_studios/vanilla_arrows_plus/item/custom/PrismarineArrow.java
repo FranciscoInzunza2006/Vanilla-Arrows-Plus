@@ -17,8 +17,12 @@ public class PrismarineArrow extends CustomArrowItem {
     private static final float IN_RAIN_MULTIPLIER = 1f;
     private static final float IN_WATER_MULTIPLIER = 1.3f;
 
-    public PrismarineArrow(Item.Settings settings, double max_damage, float speed, float divergence, float charge_time) {
-        super(settings, max_damage, speed, divergence, charge_time);
+    public PrismarineArrow(Item.Settings settings) {
+        super(settings,
+                VANILLA_MAX_DAMAGE,
+                VANILLA_SPEED,
+                VANILLA_DIVERGENCE,
+                VANILLA_PULL_TIME);
     }
 
     @Override
@@ -50,8 +54,8 @@ public class PrismarineArrow extends CustomArrowItem {
     }
 
     @Override
-    public float getChargeTime(Entity user) {
-        final float time = super.getChargeTime(user);
+    public float getPullTime(Entity user) {
+        final float time = super.getPullTime(user);
         return time - (time * getArrowWaterBonus(user) - time);
     }
 }

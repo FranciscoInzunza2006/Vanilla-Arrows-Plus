@@ -17,7 +17,7 @@ public abstract class UseDurationPropertyMixin {
         if (stack.getItem() != Items.BOW) return;
 
         if (user.getProjectileType(stack).getItem() instanceof CustomArrowItem arrow) {
-            cir.setReturnValue((int) (cir.getReturnValue() / arrow.getChargeTime(user)));
+            cir.setReturnValue((int) (cir.getReturnValue() / arrow.getPullTime(user)));
         }
     }
 }

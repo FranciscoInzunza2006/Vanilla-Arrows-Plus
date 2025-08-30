@@ -1,6 +1,7 @@
 package rabiosa_studios.vanilla_arrows_plus.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.item.ArrowItem;
@@ -15,10 +16,11 @@ import rabiosa_studios.vanilla_arrows_plus.item.custom.CustomArrowItem;
 public abstract class RangedWeaponItemMixin {
     @Inject(method = "createArrowEntity", at = @At("TAIL"))
     private void applyArrowDamage(CallbackInfoReturnable<ProjectileEntity> cir,
+                                  @Local(argsOnly = true) LivingEntity shooter,
                                   @Local ArrowItem arrow,
                                   @Local PersistentProjectileEntity arrow_entity) {
         if (arrow instanceof CustomArrowItem custom_arrow) {
-            arrow_entity.setDamage(custom_arrow.getDamage());
+            arrow_entity.setDamage(custom_arrow.getDamage(shooter));
         }
     }
 }

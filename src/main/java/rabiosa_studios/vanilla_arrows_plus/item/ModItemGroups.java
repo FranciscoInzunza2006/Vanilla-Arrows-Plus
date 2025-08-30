@@ -28,7 +28,7 @@ public class ModItemGroups {
         item_group.add(ModItems.COPPER_ARROW);
         item_group.add(ModItems.CHARGED_COPPER_ARROW);
         item_group.add(ModItems.ECHO_ARROW);
-        item_group.add(ModItems.GOLD_ARROW);
+        item_group.add(ModItems.GOLDEN_ARROW);
         item_group.add(ModItems.HONEY_ARROW);
         item_group.add(ModItems.IRON_ARROW);
         item_group.add(ModItems.PRISMARINE_ARROW);

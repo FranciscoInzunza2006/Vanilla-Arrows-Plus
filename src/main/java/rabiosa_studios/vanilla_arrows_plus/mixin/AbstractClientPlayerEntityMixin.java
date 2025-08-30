@@ -14,7 +14,7 @@ public abstract class AbstractClientPlayerEntityMixin {
         AbstractClientPlayerEntity user = (AbstractClientPlayerEntity) (Object) this;
 
         if (user.getProjectileType(Items.BOW.getDefaultStack()).getItem() instanceof CustomArrowItem arrow) {
-            return used_time / arrow.getChargeTime(user);
+            return used_time / arrow.getPullTime(user);
         }
 
         return used_time;

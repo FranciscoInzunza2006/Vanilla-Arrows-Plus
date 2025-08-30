@@ -19,10 +19,10 @@ public abstract class CrossbowItemMixin {
     @ModifyConstant(method = "getPullTime", constant = @Constant(floatValue = CustomArrowItem.VANILLA_CROSSBOW_PULL_TIME))
     private static float applyChargeTime(float pull_time, @Local(argsOnly = true) ItemStack crossbow, @Local(argsOnly = true) LivingEntity user) {
         return pull_time *
-                (user.getProjectileType(crossbow).getItem() instanceof CustomArrowItem arrow ? arrow.getChargeTime(user) : 1.0f);
+                (user.getProjectileType(crossbow).getItem() instanceof CustomArrowItem arrow ? arrow.getPullTime(user) : 1.0f);
     }
 
-    // TODO: This doesnt affect entities, check CrossbowUser interface
+    // TODO: This doesn't affect entities, check CrossbowUser interface
     @WrapOperation(method = "use", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/CrossbowItem;getSpeed(Lnet/minecraft/component/type/ChargedProjectilesComponent;)F"))
     private static float applyArrowSpeed(ChargedProjectilesComponent stack, Operation<Float> original, @Local(argsOnly = true)PlayerEntity user) {
         if (stack.getProjectiles().getFirst().getItem() instanceof CustomArrowItem arrow) {
