@@ -15,9 +15,9 @@ public class IronArrow extends CustomArrowItem {
     public IronArrow(Item.Settings settings) {
         super(settings,
                 VANILLA_MAX_DAMAGE * 2,
-                VANILLA_SPEED * 0.75f,
-                VANILLA_DIVERGENCE * 5,
-                VANILLA_PULL_TIME * 1.5f);
+                0.75f,
+                5,
+                 1.5f);
     }
 
     @Override

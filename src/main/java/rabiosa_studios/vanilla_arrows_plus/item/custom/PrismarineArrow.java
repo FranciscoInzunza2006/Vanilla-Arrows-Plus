@@ -20,9 +20,9 @@ public class PrismarineArrow extends CustomArrowItem {
     public PrismarineArrow(Item.Settings settings) {
         super(settings,
                 VANILLA_MAX_DAMAGE,
-                VANILLA_SPEED,
-                VANILLA_DIVERGENCE,
-                VANILLA_PULL_TIME);
+                1,
+                1,
+                1);
     }
 
     @Override

@@ -15,9 +15,9 @@ public class GoldenArrow extends CustomArrowItem {
     public GoldenArrow(Item.Settings settings) {
         super(settings,
                 VANILLA_MAX_DAMAGE * 0.6,
-                VANILLA_SPEED * 3f,
-                VANILLA_DIVERGENCE * 0.1f,
-                VANILLA_PULL_TIME * 0.5f);
+                speedToMultiplier(5),
+                 0.1f,
+                0.5f);
     }
 
     @Override

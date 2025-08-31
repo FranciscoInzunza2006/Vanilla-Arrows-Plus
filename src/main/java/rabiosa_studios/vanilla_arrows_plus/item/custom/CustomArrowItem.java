@@ -49,4 +49,8 @@ public abstract class CustomArrowItem extends ArrowItem {
     }
 
     public float getPullTime(Entity user) {return pull_time_multiplier;}
+
+    protected static float speedToMultiplier(float speed) {
+        return speed / VANILLA_SPEED;
+    }
 }
