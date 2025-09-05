@@ -7,24 +7,27 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.ClusterArrow;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.GoldenArrow;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.IronArrow;
+import rabiosa_studios.vanilla_arrows_plus.item.custom.PrismarineArrow;
 
 import java.util.function.Function;
 
 public class ModItems {
+    public static final Item IRON_ARROW = register("iron_arrow", IronArrow::new);
+    public static final Item GOLDEN_ARROW = register("golden_arrow", GoldenArrow::new);
+    public static final Item PRISMARINE_ARROW = register("prismarine_arrow", PrismarineArrow::new);
+    public static final Item CLUSTER_ARROW = register("cluster_arrow", ClusterArrow::new);
+
     public static final Item AERIAL_ARROW = register("aerial_arrow");
-    public static final Item AMETHYST_ARROW = register("amethyst_arrow");
     public static final Item BLAZING_ARROW = register("blazing_arrow");
     public static final Item CHARGED_COPPER_ARROW = register("charged_copper_arrow");
     public static final Item COPPER_ARROW = register("copper_arrow");
     public static final Item ECHO_ARROW = register("echo_arrow");
-    public static final Item GOLD_ARROW = register("gold_arrow");
     public static final Item HONEY_ARROW = register("honey_arrow");
-    public static final Item IRON_ARROW = register("iron_arrow");
-    public static final Item PRISMARINE_ARROW = register("prismarine_arrow");
     public static final Item REDSTONE_ARROW = register("redstone_arrow");
     public static final Item SLIME_ARROW = register("slime_arrow");
-    public static final Item SPECTRAL_ARROW = register("spectral_arrow");
-
     public static final Item VIBRATING_DUST = register("vibrating_dust");
     public static final Item WARDEN_ANTENNAE = register("warden_antennae");
 

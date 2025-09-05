@@ -19,6 +19,9 @@
 		"main": [
 			"rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlus"
 		],
+		"client": [
+			"rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlusClient"
+		],
 
 		"fabric-datagen": [
 			"rabiosa_studios.vanilla_arrows_plus.VanillaArrowsPlusDataGenerator"

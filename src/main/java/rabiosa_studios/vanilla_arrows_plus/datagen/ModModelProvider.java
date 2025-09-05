@@ -20,18 +20,17 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.AERIAL_ARROW, Models.GENERATED);
-        itemModelGenerator.register(ModItems.AMETHYST_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CLUSTER_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLAZING_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHARGED_COPPER_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.ECHO_ARROW, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GOLD_ARROW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GOLDEN_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.HONEY_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRISMARINE_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.REDSTONE_ARROW, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLIME_ARROW, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SPECTRAL_ARROW, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.VIBRATING_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.WARDEN_ANTENNAE, Models.GENERATED);
